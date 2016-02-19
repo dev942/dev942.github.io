@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aquila Market</title>
+<style>
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    max-width: 660px;
+    margin: 20px;
+}
+h1 {
+    font-size: 24px;
+}
+li {
+    margin-bottom: 10px;
+}
+</style>
+</head>
+
+<body>
+<h1>Aquila Market</h1>
+
+<p>This is a market where buyers and sellers can trade arbitrary goods
+or services for Bitcoin. The market is controlled by a closed group
+of owners, and its admins are elected by majority vote. Ownership is
+tracked in the blockchain, and shares can be transferred among mutually
+untrusting owners, optionally in exchange for Bitcoin in an atomic
+operation. The market is designed to protect its users' privacy,
+and its protocol is Tor-friendly.</p>
+
+<p>The network consists of servers run by the owners and a thin client
+run by all users. The thin client connects to multiple servers, and
+is designed to provide reasonably good security properties while keeping
+minimum local state, using SPV-style verification of the market's
+ownership and control.</p>
+
+<p>The client is available now. The server will be released soon. In our
+security model, any bug that can cause disclosure of secret information
+or loss of funds is by definition a client bug. The client below uses
+testnet Bitcoin, and connects to a couple of servers that I'm running
+as Tor hidden services. If you're not running Tor, then the client will
+always fail.</p>
+
+<ul>
+    <li>
+        <a href="aquila-live-dangerous.html">
+            client, for running live from network
+        </a>
+        <ul><li>
+            The client is a JavaScript program, so you can run it without
+            installation. By doing this, you are trusting GitHub's servers
+            and me every time you run the market. This is an unnecessary
+            risk.
+        </li></ul>
+    </li>
+    <li>
+        <a href="https://github.com/dev942/aquila/client/build/aquila-standalone-safe.html">
+            client, for saving locally
+        </a>
+        <ul><li>
+            You can download the client as a single HTML file with no
+            further dependencies, save it locally (e.g., to your desktop),
+            and run it from there. This is preferred.
+        </li></ul>
+    </li>
+    <li>
+        <a href="https://github.com/dev942/aquila/README.txt">
+            technical description
+        </a>
+    </li>
+    <li>
+        <a href="https://github.com/dev942/aquila/">
+            source code
+        </a>
+    </li>
+</ul>
+
+<p>I plan to launch a livenet market soon, with initial ownership
+distributed among people who have reported vulnerabilities in the client
+or otherwise contributed to the project. See the forums on the market
+for details.</p>
+
+<p><em>dev942, 18 Feb 2016</em></p>
+
+</body>
+
+</html>
+
