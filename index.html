@@ -58,11 +58,19 @@ always fail.</p>
         <a href="https://raw.githubusercontent.com/dev942/aquila/master/client/build/aquila-standalone-safe.html">
             client, for saving locally
         </a>
-        <ul><li>
-            You can download the client as a single HTML file with no
-            further dependencies, save it locally (e.g., to your desktop),
-            and run it from there. This is preferred.
-        </li></ul>
+        <ul>
+            <li>
+                You can download the client as a single HTML file with no
+                further dependencies, save it locally (e.g., to your desktop),
+                and run it from there. This is preferred.
+            </li><li>
+                Sadly, <b>Tor Browser Bundle seems not to support
+                localStorage for file:// URLs</b>. This is a necessary
+                feature. I'm investigating, but for now your options
+                are either to run live, or to use a normal web browser
+                build and point it to Tor by hand.
+            </li>
+        </ul>
     </li>
     <li>
         <a href="https://raw.githubusercontent.com/dev942/aquila/master/README.txt">
